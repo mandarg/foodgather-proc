@@ -29,6 +29,7 @@
 # Data files #
 ##############
 *.csv
+!kitchenmeallog.csv
 *.xls
 
 # OS generated files #

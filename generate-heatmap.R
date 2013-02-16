@@ -13,3 +13,9 @@ posixdates <- as.Date(lunchdata$Date, format="%m/%d/%Y")
 
 # plot the heatmap
 calendarHeat(posixdates, lunchdata$Meals_Served, varname="Lunches Served", color="g2r")
+
+# read data from the smoothed lunch data file
+smoothedlunchdata = read.csv(file="smoothedlunchdata.csv")
+
+# heatmap the smoothed lunch data
+calendarHeat(posixdates, smoothedlunchdata$Meals_Smoothed, varname = "Smoothed Data - Lunches Served", color="b2w")
